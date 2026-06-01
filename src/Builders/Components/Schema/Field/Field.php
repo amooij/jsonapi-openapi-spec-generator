@@ -14,8 +14,8 @@ use PrinsFrank\JsonapiOpenapiSpecGenerator\Exception\NotImplementedException;
 class Field
 {
     /**
-     * @throws NotImplementedException
-     */
+    * @throws NotImplementedException
+    */
     public static function getType(SchemaField $field): string
     {
         return match (get_class($field)) {
